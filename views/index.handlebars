@@ -1,0 +1,53 @@
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s7">
+      <h1>Burgers Available</h1>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+            <!-- Method Override will change the POST into a PUT -->
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+              <div class = "cwr_inline">
+              	  <label>{{this.burger_name}}</label>
+                  <button type = submit class = "eat_it">Eat It</button>  
+                  </div>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col s1">
+      </div>
+
+      <div class="col s4">
+      <h1>Burgers Eaten</h1>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<div class="container">
+	<div class="row">
+  		<div class="col s12">
+  			<h2>Name a Burger</h2>
+    		<form action="/burgers" method="POST">
+      			<input type="text" id="name" name="burger_name" placeholder="Name Your Burger">
+      			<button type="submit" class="addBurgerButton">Add The Burger</button>
+    		</form>
+  		</div>
+	</div>
+</div>

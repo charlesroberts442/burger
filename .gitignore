@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+#iNeed2 files and directory
+index.html
+iNeed2_Resources/
+
+

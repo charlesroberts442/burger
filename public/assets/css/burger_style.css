@@ -1,0 +1,27 @@
+/***********************************************************************
+ * Copyright (c) 2018 Charles W. Roberts
+ * All Rights Reserved
+ *
+ * No portion of this code may be copied or modified without the
+ * prior written permission of Charles Roberts.
+ *
+ ***********************************************************************/
+
+.cwr_inline{
+	display: inline-block;
+}
+
+ .eat_it{
+ 	width:5em;
+ }
+
+#NameField{
+	width:33%;
+}
+
+
+ #burger_picher{
+ 	margin: auto;
+    width: 50%;
+ }
+
