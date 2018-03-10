@@ -2,7 +2,15 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express-handlebars": "^3.0.0",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/charlesroberts442/burger/issues"
   },
-  "homepage": "https://github.com/charlesroberts442/burger#readme",
-  "dependencies": {
-    "method-override": "^2.3.10"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/charlesroberts442/burger#readme"
 }
